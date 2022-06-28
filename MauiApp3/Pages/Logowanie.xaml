@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.Logowanie"
+             Shell.NavBarIsVisible="False"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Logowanie">
+    <ScrollView>
+        <VerticalStackLayout 
+            Spacing="20" 
+            Padding="30,0" 
+            VerticalOptions="Center">
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Witaj na aplikacji dla osób aktywnych fizycznie" FontSize="28" TextColor="Gray" HorizontalTextAlignment="Center" />
+                <Label Text="Zaloguj się" FontSize="20" TextColor="Gray" HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+            <Frame HeightRequest="80">
+                <Grid ColumnDefinitions="15,*"  ColumnSpacing="10">
+                    <Image Source="email.svg" HeightRequest="15" WidthRequest="15" ></Image>
+                    <Entry Placeholder="Email" Grid.Column="1"></Entry>
+                </Grid>
+            </Frame>
+            <Frame HeightRequest="80">
+                <Grid ColumnDefinitions="15,*"  ColumnSpacing="10">
+                    <Image Source="password.svg" HeightRequest="15" WidthRequest="15" ></Image>
+                    <Entry Placeholder="haslo" IsPassword="True" Grid.Column="1"></Entry>
+                </Grid>
+            </Frame>
+
+            <Button x:Name="BtnLog" Text="Zaloguj" CornerRadius="28" Clicked="LoginU" BackgroundColor="LightGreen" WidthRequest="200" HorizontalOptions="Center"/>
+
+            <HorizontalStackLayout  Spacing="5" HorizontalOptions="Center">
+                <Label Text="Nie masz konta?" TextColor="Gray" ></Label>
+                <Label Text="Dołącz do nas" TextColor="LightGreen"></Label>
+                <HorizontalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Rejestracja" />
+                </HorizontalStackLayout.GestureRecognizers>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

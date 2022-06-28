@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.Team"
+             Shell.BackgroundColor='LightGreen'
+             Title="Aktywność grupowa">
+    <Grid>
+        <Path Data="m187.06522,73.43599l403.99976,0l0,130.39996l-202.00002,32.60002l-201.99998,-32.60002l0.00023,-130.39996l0.00001,0z" Stroke="#000"  Fill="lightgreen"/>
+        
+        <StackLayout Spacing="70" Padding="70">
+
+            <Frame HorizontalOptions="FillAndExpand" BackgroundColor="White" HasShadow="True" BorderColor="Green" WidthRequest="300" HeightRequest="500" Margin="-5,0,0,0 ">
+                <ImageButton Source="wydarzenie.svg " HeightRequest="500" WidthRequest="800" Clicked="Clicked" />
+                
+            </Frame>
+            <Frame HasShadow="True" WidthRequest="80" HeightRequest="70" CornerRadius="100" Margin="-80,-100,0,0" BackgroundColor="#E0E3EF" BorderColor="White" >
+                <ImageButton Source="pencil.svg" HorizontalOptions="Center" ></ImageButton>
+            </Frame>
+            <Frame HasShadow="True" WidthRequest="80" HeightRequest="70" CornerRadius="100" Margin="80,-140,0,0" BackgroundColor="#E0E3EF" BorderColor="White" >
+                <ImageButton Source="search.svg" HorizontalOptions="Center" ></ImageButton>
+            </Frame>
+            
+            <!--<Frame HorizontalOptions="FillAndExpand" BackgroundColor="White" HasShadow="True" BorderColor="Green" WidthRequest="300" HeightRequest="200" Margin="-5,-30,0,0 ">
+                <Label> Dostępne aktywności</Label>
+            </Frame>-->
+
+        </StackLayout>
+
+    </Grid>
+</ContentPage>

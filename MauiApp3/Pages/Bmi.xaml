@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.Bmi"
+             Shell.BackgroundColor="LightGreen"
+             Title="Bmi">
+    <StackLayout Padding="10" Spacing="25">
+        
+        
+        
+        <Label Text="Ile masz lat?"
+                Padding="20"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+
+        <Stepper Maximum="100"
+                 Minimum="10"
+                 Increment="1"
+                 HorizontalOptions="Center"
+                 ValueChanged="OnStepperValueChanged" />
+        <Label x:Name="WynikWiek"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <Label Text="Ile masz wzrostu?"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+        
+        <Slider Maximum="250"
+                Minimum="69"
+                WidthRequest="200"
+                ValueChanged="OnSliderValueChanged" />
+        <Label x:Name="Wynik"
+               
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <Label Text="Ile ważysz?"
+                HorizontalOptions="Center" />
+        <Slider Maximum="200"
+                Minimum="25"
+                WidthRequest="200"
+                ValueChanged="WskaznikWagi" />
+        <Label x:Name="WynikWagi"
+               
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <Button x:Name="BtnLog" Text="Sprawdz" CornerRadius="28" Clicked="SprawdzBmi" BackgroundColor="LightGreen" WidthRequest="200" HorizontalOptions="Center"/>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,93 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MauiApp3"
+             x:Class="MauiApp3.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+    <Application.MainPage>
+        <Shell>
+            <!--<FlyoutItem FlyoutDisplayOptions="AsSingleItem">
+                <ShellContent Title="Home"
+                      Icon="home.svg"
+                      ContentTemplate="{DataTemplate local:HomePage}" />
+                <ShellContent Title="Settings"
+                      Icon="settings.svg"
+                      ContentTemplate="{DataTemplate local:Settings}" />
+            </FlyoutItem>-->
+            <!--<FlyoutItem FlyoutDisplayOptions="AsSingleItem" Title="Home" Icon="home.svg">
+                <ShellContent Title="Home "
+                      Icon="home.svg"
+                      ContentTemplate="{DataTemplate local:HomePage}" />
+            </FlyoutItem>-->
+            <FlyoutItem FlyoutDisplayOptions="AsSingleItem" Title="Home"
+                Icon="home.svg">
+                <ShellContent 
+                    Title="Home"
+                     Icon="Home.svg"
+                     ContentTemplate="{DataTemplate local:HomePage}" />
+                <ShellContent 
+                      Title="Ustawienia"
+                      Icon="settings.svg"
+                      ContentTemplate="{DataTemplate local:Settings}" />
+            </FlyoutItem>
+            <FlyoutItem FlyoutDisplayOptions="AsSingleItem" Title="Aktywność"
+                Icon="run.svg">
+                <ShellContent 
+                    Title="Bieganie"
+                     Icon="run.svg"
+                     ContentTemplate="{DataTemplate local:Run}" />
+                <ShellContent 
+                      Title="Rower"
+                      Icon="bike.svg"
+                      ContentTemplate="{DataTemplate local:Bike}" />
+                <ShellContent Title="Sporty Grupowe"
+                      Icon="team.svg"
+                      ContentTemplate="{DataTemplate local:Team}" />
+                <ShellContent Title="Ranking"
+                      Icon="settings.svg"
+                      ContentTemplate="{DataTemplate local:Ranking}" />
+            </FlyoutItem>
+            
+            <FlyoutItem FlyoutDisplayOptions="AsSingleItem" Title="Bmi"
+                Icon="bmi.svg">
+                <Tab>
+                    <ShellContent
+                        Icon ="bmi.svg" ContentTemplate="{DataTemplate local:Bmi}" />
+                </Tab>
+            </FlyoutItem>
+            <FlyoutItem FlyoutDisplayOptions="AsSingleItem" Title="Profil"
+                Icon="profil.svg">
+                <Tab>
+                    <ShellContent
+                        Icon ="profil.svg" ContentTemplate="{DataTemplate local:Profil}" />
+                </Tab>
+            </FlyoutItem>
+         
+            <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Title="Settings">
+                <ShellContent Title="Settings"
+                      Icon="settings.svg"
+                      ContentTemplate="{DataTemplate local:Settings}" />
+            </FlyoutItem>
+            <FlyoutItem FlyoutDisplayOptions="AsSingleItem" Title="Informacje" Icon="info.svg">
+                <ShellContent Title="About"
+                      Icon="info.svg"
+                      ContentTemplate="{DataTemplate local:About}" />
+            </FlyoutItem>
+            <FlyoutItem FlyoutDisplayOptions="AsSingleItem" Title="Wyloguj" Icon="logout.svg">
+                <ShellContent Title="Logout"
+                      Icon="logout.svg"
+                      ContentTemplate="{DataTemplate local:Logowanie}" />
+            </FlyoutItem>
+
+        </Shell>
+    </Application.MainPage>
+
+
+</Application>

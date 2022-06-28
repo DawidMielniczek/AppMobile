@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.Settings"
+             Shell.BackgroundColor="LightGreen"
+             Title="Ustawienia">
+    <StackLayout Spacing="10">
+        <Label Margin=" 20,30,0,0" FontSize="Title" FontAttributes="Bold" TextColor="LightGreen"> O koncie:</Label>
+        <Label TextColor="gray" Margin=" 20,18,0,0">Email:</Label>
+        <Frame Padding="10" Margin="20,0,20,0" HeightRequest="40">
+            <Label Text="Dawid@gmail.com"></Label>
+        </Frame>
+        <Label TextColor="Gray" Margin=" 20,18,0,0" >Zmień hasło:</Label>
+        <Frame Padding="10" Margin="20,0,20,0" HeightRequest="40">
+            <Label Text="*********"></Label>
+        </Frame>
+        <Label TextDecorations="Underline" Margin="20,-10,0,0" TextColor="Gray" >Zmień</Label>
+        <Label Margin=" 20,20,0,0" FontSize="18" FontAttributes="Bold"> Tryb Ciemny</Label>
+            <Switch Margin="0,-40,0,0" OnColor="LightGreen" ></Switch>
+
+        <Label Margin=" 20,20,0,0" FontSize="18" FontAttributes="Bold">Automatyczna aktualizacja</Label>
+        <Switch Margin="0,-40,0,0" OnColor="LightGreen" ></Switch>
+        
+        <Label Margin=" 20,20,0,0" FontSize="18" FontAttributes="Bold">Lokalizacja</Label>
+        <Switch Margin="0,-40,0,0" OnColor="LightGreen" ></Switch>
+
+
+        <Label Text="Udostępnij aplikacje znajomym"
+               TextDecorations="Underline"
+               Margin="0,50,0,0"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+        <Frame Margin ="0,10,0,0" HeightRequest="50" WidthRequest="60" BorderColor="White">
+            <ImageButton Source="messenger.svg" WidthRequest="60" HeightRequest="50"></ImageButton>
+        </Frame>
+        <Frame Margin ="-250,-60,0,0" HeightRequest="50" WidthRequest="60" BorderColor="White">
+            <ImageButton Source="fb.svg" WidthRequest="60" HeightRequest="50" ></ImageButton>
+        </Frame>
+        <Frame Margin ="250,-60,0,0" HeightRequest="50" WidthRequest="60" BorderColor="White">
+            <ImageButton Source="link.svg" HeightRequest="50" WidthRequest="60" ></ImageButton>
+        </Frame>
+        
+    </StackLayout>
+</ContentPage>

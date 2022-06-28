@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.HomePage"
+             Shell.BackgroundColor="LightGreen"
+             Title="Strona Główna">
+
+    <Grid>
+        <Path Data="m187.06522,73.43599l403.99976,0l0,106.39997l-202.00002,26.60002l-201.99998,-26.60002l0.00023,-106.39997z" Stroke="#000"  Fill="lightgreen"/>
+
+        <StackLayout Padding="20">
+           
+            <Frame  BackgroundColor="White" HasShadow="True" BorderColor="LightGreen" CornerRadius="87" WidthRequest="150" HeightRequest="150" Margin="0,30,0,0 ">
+                <Image Source="user.svg"></Image>
+            </Frame>
+
+            <Label FontSize="20" VerticalOptions="Center" HorizontalOptions="Center"> Witaj Dawid1256!</Label>
+
+            <Frame HeightRequest="100" HorizontalOptions="Start" WidthRequest="160" Margin="0,50,0,0 ">
+                <Grid>
+                    <Label>Ostatnia aktywność:</Label>
+                    <Label></Label>
+                </Grid>
+            </Frame>
+            <Frame HeightRequest="100" HorizontalOptions="Start" WidthRequest="160" Margin="190,-100,0,0 ">
+                <Grid>
+                    <Label>Historia ćwiczeń:</Label>
+                    <Label></Label>
+                </Grid>
+            </Frame>
+            <Frame HeightRequest="100" HorizontalOptions="Start" WidthRequest="160" Margin="0,30,0,0 ">
+                <Grid>
+                    <Label>Rozpocznij aktywność:</Label>
+                    <Label></Label>
+                </Grid>
+            </Frame>
+            <Frame HeightRequest="100" HorizontalOptions="Start" WidthRequest="160" Margin="190,-100,0,0 ">
+                <Grid>
+                    <Label>Wydarzenia:</Label>
+                    <Label></Label>
+                </Grid>
+            </Frame>
+            <Frame HeightRequest="100" HorizontalOptions="Start" WidthRequest="350" Margin="0,30,0,0 ">
+                <Grid>
+                    <Label>Wydarzenia:</Label>
+                    <Label></Label>
+                </Grid>
+            </Frame>
+
+        </StackLayout>
+    </Grid>
+</ContentPage>

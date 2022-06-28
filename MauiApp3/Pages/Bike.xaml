@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.Bike"
+             Shell.BackgroundColor="LightGreen"
+             Title="Jazda na Rowerze">
+    <Grid>
+        <Path Data="m187.06522,73.43599l403.99976,0l0,130.39996l-202.00002,32.60002l-201.99998,-32.60002l0.00023,-130.39996l0.00001,0z" Stroke="#000"  Fill="lightgreen"/>
+
+        <StackLayout Spacing="70" Padding="70">
+
+            <Frame HorizontalOptions="FillAndExpand" BackgroundColor="White" HasShadow="True" BorderColor="Green" WidthRequest="300" HeightRequest="500" Margin="-5,0,0,0 ">
+                <Image Source="kolarz.svg" HeightRequest="550" WidthRequest="750"  />
+            </Frame>
+            <Frame HasShadow="True" WidthRequest="120" HeightRequest="110" CornerRadius="100" Margin="0,-110,0,0" BackgroundColor="#E0E3EF" BorderColor="White" >
+                <ImageButton Source="play.svg" HorizontalOptions="Center" ></ImageButton>
+            </Frame>
+            <!--<Frame HorizontalOptions="FillAndExpand" BackgroundColor="White" HasShadow="True" BorderColor="Green" WidthRequest="300" HeightRequest="200" Margin="-5,-30,0,0 ">
+                <Label> Historia aktywności</Label>
+            </Frame>-->
+
+        </StackLayout>
+
+    </Grid>
+</ContentPage>
